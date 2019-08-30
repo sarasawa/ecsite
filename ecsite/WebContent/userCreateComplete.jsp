@@ -67,7 +67,14 @@ text-align: center;
 		<div>
 			<h3>ユーザーの登録が完了致しました。</h3>
 			<div>
-				<a href = '<s:url action = "HomeAction" />'>ログインへ</a>
+			<s:if test = "#session.adminFlg == 2">
+				<p>管理者画面に戻る場合は
+					<a href ='<s:url action = "AdminAction" />'>こちら</a></p>
+			</s:if>
+			<s:else>
+				<span>ログイン画面に戻る場合は</span>
+				<a href = '<s:url action = "HomeAction" />'>こちら</a>
+				</s:else>
 			</div>
 		</div>
 	</div>

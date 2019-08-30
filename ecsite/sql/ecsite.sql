@@ -13,7 +13,8 @@ login_id varchar(16)unique,
 login_pass varchar(16),
 user_name varchar(50),
 admin_flg varchar(1),
-insert_date datetime
+insert_date datetime,
+update_date datetime
 );
 
 drop table if exists item_info_transaction;

@@ -2,6 +2,7 @@ package com.internousdev.ecsite.dto;
 
 public class LoginDTO {
 	
+	private String id;
 	private String loginId;
 	private String loginPassword;
 	private String userName;
@@ -9,6 +10,14 @@ public class LoginDTO {
 	private boolean loginFlg = false;
 	
 	
+	
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public String getLoginId() {
 		return loginId;
 	}
